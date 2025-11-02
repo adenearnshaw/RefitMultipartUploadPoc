@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.0.0
+MinimumVisualStudioVersion = 17.8.0.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefitMultipartPoc.AppHost", "src\RefitMultipartPoc.AppHost\RefitMultipartPoc.AppHost.csproj", "{427D0289-B596-4531-8534-0B81A6D600AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefitMultipartPoc.ServiceDefaults", "src\RefitMultipartPoc.ServiceDefaults\RefitMultipartPoc.ServiceDefaults.csproj", "{E2E3BE7B-BDD0-49A9-8E01-59F57672254C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefitMultipartPoc.Client", "src\RefitMultipartPoc.Client\RefitMultipartPoc.Client.csproj", "{99DCDDF8-55B4-496E-AD94-180757376855}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefitMultipartPoc.Api", "src\RefitMultipartPoc.Api\RefitMultipartPoc.Api.csproj", "{7F5C73B1-D852-4820-9975-FFDED27F1193}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefitMultipartPoc.Uploader", "src\RefitMultipartPoc.Uploader\RefitMultipartPoc.Uploader.csproj", "{1C62B08A-A3ED-4028-A081-ABC8DBC39817}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppHost", "AppHost", "{ECC282D6-E354-48CF-B73E-468CBE69491D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{427D0289-B596-4531-8534-0B81A6D600AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{427D0289-B596-4531-8534-0B81A6D600AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{427D0289-B596-4531-8534-0B81A6D600AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{427D0289-B596-4531-8534-0B81A6D600AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2E3BE7B-BDD0-49A9-8E01-59F57672254C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2E3BE7B-BDD0-49A9-8E01-59F57672254C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2E3BE7B-BDD0-49A9-8E01-59F57672254C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2E3BE7B-BDD0-49A9-8E01-59F57672254C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99DCDDF8-55B4-496E-AD94-180757376855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99DCDDF8-55B4-496E-AD94-180757376855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99DCDDF8-55B4-496E-AD94-180757376855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99DCDDF8-55B4-496E-AD94-180757376855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F5C73B1-D852-4820-9975-FFDED27F1193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F5C73B1-D852-4820-9975-FFDED27F1193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F5C73B1-D852-4820-9975-FFDED27F1193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F5C73B1-D852-4820-9975-FFDED27F1193}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C62B08A-A3ED-4028-A081-ABC8DBC39817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C62B08A-A3ED-4028-A081-ABC8DBC39817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C62B08A-A3ED-4028-A081-ABC8DBC39817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C62B08A-A3ED-4028-A081-ABC8DBC39817}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78B363B2-1CED-43CB-B1C4-C34FA2F35CE6}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{427D0289-B596-4531-8534-0B81A6D600AE} = {ECC282D6-E354-48CF-B73E-468CBE69491D}
+		{E2E3BE7B-BDD0-49A9-8E01-59F57672254C} = {ECC282D6-E354-48CF-B73E-468CBE69491D}
+	EndGlobalSection
+EndGlobal
