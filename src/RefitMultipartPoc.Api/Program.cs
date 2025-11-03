@@ -1,3 +1,4 @@
+using RefitMultipartPoc.Abstractions;
 using RefitMultipartPoc.Api;
 
 var builder = WebApplication.CreateBuilder(args);

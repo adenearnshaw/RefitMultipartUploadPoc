@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using RefitMultipartPoc.Abstractions;
 using RefitMultipartPoc.Client;
 
 namespace RefitMultipartPoc.Uploader;
@@ -33,7 +34,18 @@ public class UploaderWorker(IApiClient api, IHostApplicationLifetime lifetime, I
             ms.Position = 0;
             var streamPart = new Refit.StreamPart(ms, "Sample PDF Upload.pdf", "application/pdf");
 
-            var meta = new UploadMetadataDto { Id = 1, Name = "UploaderWorker" };
+            var meta = new UploadMetadata
+            {
+                SourceId = Guid.NewGuid().ToString(),
+                FileName = "Sample PDF Upload.pdf",
+                MimeType = "application/pdf",
+                ContainsPI = false,
+                Tags = new Dictionary<string, string>
+                {
+                    { "UploadedBy", "UploaderWorker" },
+                    { "UploadDate", DateTime.UtcNow.ToString("o") }
+                }
+            };
 
             logger.LogInformation("Uploading embedded resource {resource}", resourceName);
 

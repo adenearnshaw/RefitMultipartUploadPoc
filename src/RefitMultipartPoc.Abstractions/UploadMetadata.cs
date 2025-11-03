@@ -1,16 +1,26 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace RefitMultipartPoc.Api;
+namespace RefitMultipartPoc.Abstractions;
 
 public sealed class UploadMetadata : IParsable<UploadMetadata>
 {
-    [JsonPropertyName("data_mime_type")]
-    public string? MimeType { get; set; }
+    [JsonPropertyName("sourceId")]
+    public required string SourceId { get; init; }
+    
+    [JsonPropertyName("fileName")]
+    public required string FileName { get; init; }
 
-    [JsonPropertyName("data_name")]
-    public string? Name { get; set; }
+    [JsonPropertyName("mimeType")]
+    public required string MimeType { get; init; }
 
+    [JsonPropertyName("containsPI")]
+    public bool ContainsPI { get; init; }
+
+    [JsonPropertyName("tags")]
+    public Dictionary<string, string> Tags { get; init; } = [];
+
+#region IParsable implementation
     // Simple parser that expects the input to be a JSON object matching the shape
     public static UploadMetadata Parse(string s, IFormatProvider? provider)
     {
@@ -49,4 +59,5 @@ public sealed class UploadMetadata : IParsable<UploadMetadata>
             return false;
         }
     }
+#endregion
 }

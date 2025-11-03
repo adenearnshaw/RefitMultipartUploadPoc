@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using RefitMultipartPoc.Api;
+using RefitMultipartPoc.Abstractions;
+
+namespace RefitMultipartPoc.Api;
 
 public record UploadRequest
 {

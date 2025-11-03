@@ -12,8 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference
-      Include="../RefitMultipartPoc.ServiceDefaults/RefitMultipartPoc.ServiceDefaults.csproj" />
+    <ProjectReference Include="../RefitMultipartPoc.Abstractions/RefitMultipartPoc.Abstractions.csproj" />
+    <ProjectReference Include="../RefitMultipartPoc.ServiceDefaults/RefitMultipartPoc.ServiceDefaults.csproj" />
   </ItemGroup>
 
 </Project>

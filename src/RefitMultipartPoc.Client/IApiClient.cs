@@ -1,4 +1,5 @@
 using Refit;
+using RefitMultipartPoc.Abstractions;
 
 namespace RefitMultipartPoc.Client;
 
@@ -8,6 +9,6 @@ public interface IApiClient
     [Multipart]
     [Post("/upload")]
     Task<ApiResponse<UploadRespnseDto>> UploadAsync(
-        [AliasAs("data")] UploadMetadataDto data,
+        [AliasAs("data")] UploadMetadata data,
         [AliasAs("file")] StreamPart file);
 }
